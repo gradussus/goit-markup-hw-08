@@ -1,0 +1,32 @@
+.client {
+	display: flex;
+	flex-wrap: wrap;
+	// justify-content: space-between;
+	list-style: none;
+	margin: -15px;
+}
+.client__icon {
+	width: 106px;
+	height: 60px;
+}
+.client__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	fill: #afb1b8;
+	transition: fill 250ms var(--main-cubic), border 250ms var(--main-cubic);
+
+	&:hover,
+	&:focus {
+		fill: var(--accent-color);
+		border: 1px solid var(--accent-color);
+	}
+}
+.client__item {
+	width: calc((100% - 4 * 15px) / 2);
+	margin: 15px;
+}

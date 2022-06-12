@@ -22,32 +22,66 @@
 	</head>
 	<body>
 		<!-- Хэдэр -->
-	<header class="header">
-		<div class="header__container container">
-			<a class="logo logo__header" lang="en" href="./">
-				<span class="logo__web">Web</span>Studio
-			</a>
-			<nav>
-				<ul class="main-nav">
-					<li class="main-nav__item"><a class="main-nav__link" href="./index.html">Студия</a></li>
-					<li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфолио</a></li>
-					<li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="./contacts.html">Контакты</a></li>
+		<header class="header">
+			<div class="header__container container">
+				<a class="logo logo__header" lang="en" href="./">
+					<span class="logo__web">Web</span>Studio
+				</a>
+				<nav>
+					<ul class="main-nav">
+						<li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="./index.html">Студия</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфолио</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="./contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+				<ul class="contacts-header">
+					<li class="contacts-header__item">
+						<a href="mailto:info@devstudio.com" class="contacts-header__link"> <svg class="contacts-header__icon contacts-header__icon--mail">
+								<use href="./images/icons.svg#mail"></use>
+							</svg> info@devstudio.com</a>
+					</li>
+					<li class="contacts-header__item">
+						<a href="tel:+380961111111" class="contacts-header__link"> <svg class="contacts-header__icon contacts-header__icon--phone">
+								<use href="./images/icons.svg#phone"></use>
+							</svg>+38 096 111 11 11</a>
+					</li>
 				</ul>
-			</nav>
-			<ul class="contacts-header">
-				<li class="contacts-header__item">
-					<a href="mailto:info@devstudio.com" class="contacts-header__link"> <svg class="contacts-header__icon contacts-header__icon--mail">
-							<use href="./images/icons.svg#mail"></use>
-						</svg> info@devstudio.com</a>
-				</li>
-				<li class="contacts-header__item">
-					<a href="tel:+380961111111" class="contacts-header__link"> <svg class="contacts-header__icon contacts-header__icon--phone">
-							<use href="./images/icons.svg#phone"></use>
-						</svg>+38 096 111 11 11</a>
-				</li>
-			</ul>
-		</div>
-	</header>
+				
+				<button class="menu-button" type="button" data-menu-button>
+					<svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+						<use class="icon-close" href="./images/icons.svg#close"></use>
+						<use class="icon-menu" href="./images/icons.svg#menu-btn"></use>
+					</svg>
+				</button>
+				<div class="mobile-menu">
+					<ul class="mobile-menu__nav-list">
+						<li class="mobile-menu__nav-item">
+							<a class="mobile-menu__nav-link" href="./index.html">СТУДИЯ</a>
+						</li>
+						<li class="mobile-menu__nav-item">
+							<a class="mobile-menu__nav-link" href="./portfolio.html">ПОРТФОЛИО</a>
+						</li>
+						<li class="mobile-menu__nav-item">
+							<a class="mobile-menu__nav-link" href="./contacts.html">КОНТАКТЫ</a>
+						</li>
+					</ul>
+					<ul class="mobile-menu__address-list">
+						<li>
+							<a class="mobile-menu__address-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+						</li>
+						<li>
+							<a class="mobile-menu__address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="mobile-menu__social-list">
+							<li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link">Instagram</a></li>
+							<li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link">Twitter</a></li>
+							<li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link">Facebook</a></li>
+							<li class="mobile-menu__social-item"><a href="" class="mobile-menu__social-link">LinkedIn</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
 		<main></main>
 		<!-- Футер -->
 	<footer class="footer">
@@ -114,5 +148,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
