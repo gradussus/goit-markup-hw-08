@@ -1,2 +1,2 @@
-# goit-markup-hw-07
-Home Work 1.7
+# goit-markup-hw-08
+Home Work 1.8
