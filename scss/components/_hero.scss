@@ -1,0 +1,54 @@
+.hero {
+	background-image: linear-gradient(to right, rgba(47, 40, 50, 0.4), rgba(47, 40, 50, 0.4)),
+		url(../../images/bcg-img/bcg-mobile.jpg);
+	background-size: cover;
+	padding-top: 118px;
+	padding-bottom: 118px;
+	text-align: center;
+	background-position: center;
+	max-width: 1600px;
+
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: linear-gradient(to right, rgba(47, 40, 50, 0.4), rgba(47, 40, 50, 0.4)),
+			url(../../images/bcg-img/bcg-mobile@2x.jpg);
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		background-image: linear-gradient(to right, rgba(47, 40, 50, 0.4), rgba(47, 40, 50, 0.4)),
+			url(../../images/bcg-img/bcg-tablet.jpg);
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(to right, rgba(47, 40, 50, 0.4), rgba(47, 40, 50, 0.4)),
+			url(../../images/bcg-img/bcg-tablet@2x.jpg);
+	}
+	@media screen and (min-width: 1200px) {
+		background-image: linear-gradient(to right, rgba(47, 40, 50, 0.4), rgba(47, 40, 50, 0.4)),
+			url(../../images/bcg-img/bcg-pc.jpg);
+		padding-top: 200px;
+		padding-bottom: 280px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(to right, rgba(47, 40, 50, 0.4), rgba(47, 40, 50, 0.4)),
+			url(../../images/bcg-img/bcg-pc@2x.jpg);
+	}
+}
+
+.hero__title {
+	margin-bottom: 30px;
+
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 1.62;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #fff;
+}
+.hero__button {
+	margin-right: auto;
+	margin-left: auto;
+}

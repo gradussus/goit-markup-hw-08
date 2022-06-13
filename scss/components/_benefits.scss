@@ -26,3 +26,18 @@
 	color: var(--primary-grey);
 	margin-bottom: 30px;
 }
+.benefits {
+	margin: -15px;
+	@media screen and (min-width: 768px) {
+		@media (max-width: 1199px) {
+			flex-wrap: wrap;
+		}
+		display: flex;
+	}
+}
+.benefits__item {
+	margin: 15px;
+	@media screen and (min-width: 768px) {
+		width: calc((100% / 2) - 30px);
+	}
+}

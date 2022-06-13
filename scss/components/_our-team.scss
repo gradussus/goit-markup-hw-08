@@ -12,6 +12,8 @@
 	border-radius: 0px 0px 4px 4px;
 	margin-top: 30px;
 	max-width: 450px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .our-team__name {
 	font-weight: 500;
@@ -29,4 +31,19 @@
 	line-height: 1.19;
 	text-align: center;
 	letter-spacing: 0.03em;
+}
+.our-teamm {
+	margin: -15px;
+	@media screen and (min-width: 768px) {
+		@media (max-width: 1199px) {
+			flex-wrap: wrap;
+		}
+		display: flex;
+	}
+}
+.our-team__item {
+	margin: 15px;
+	@media screen and (min-width: 768px) {
+		width: calc((100% / 2) - 30px);
+	}
 }

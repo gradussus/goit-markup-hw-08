@@ -26,7 +26,13 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-bottom: 30px;
+	}
+	@media screen and (min-width: 1199px) {
+		margin-bottom: 50px;
+	}
 }
 .sorting-list__item:not(:first-child) {
 	margin-left: 8px;
@@ -34,12 +40,19 @@
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: stretch;
 	margin-left: -30px;
 	margin-top: -30px;
 }
 .portfolio-list-item {
 	margin-left: 30px;
 	margin-top: 30px;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: 354px;
+		:last-child {
+			margin-right: auto;
+		}
+	}
 }
 .project-name {
 	font-size: 18px;
@@ -98,5 +111,17 @@
 	.projects-item:hover &,
 	.projects-item:focus & {
 		transform: translateY(-100%);
+	}
+}
+.portfolio__container {
+	@media screen and (max-width: 767px) {
+		max-width: 450px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: 768px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
