@@ -1,5 +1,7 @@
 .benefits__item:not(:last-child) {
+	@media screen and (max-width:767px){
 	margin-bottom: 30px;
+	}
 }
 .benefits__div {
 	background-color: var(--background-grey);
@@ -11,7 +13,7 @@
 .benefits__title {
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 1.14;
 	text-align: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
@@ -35,4 +37,15 @@
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--primary-grey);
+}
+@media screen and (min-width:768px){
+	.benefits {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+	.benefits__item{
+		margin: 15px;
+		width: calc((100% - 15px * 4) / 2);
+	}
 }

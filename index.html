@@ -169,22 +169,14 @@
 		<section class="section section--bgc-grey">
 			<div class="container">
 				<h2 class="section__title">Наша команда</h2>
-				<ul class="our-teamm">
+				<ul class="our-team">
 					<li class="our-team__item">
-						<img 
-							srcset="
-							./images/our-team/igor-270.jpg 270w,
-							./images/our-team/igor-354.jpg 354w,
-							./images/our-team/igor-450.jpg 450w,
-							./images/our-team/igor-540.jpg 540w,
-							./images/our-team/igor-708.jpg 708w,
-							./images/our-team/igor-900.jpg 900w
-							"
-							sizes="(min-width: 1200px) 270px, (min-width: 1200px) 270px, (min-width: 1200px) 270px, 100%"
-							src="./images/our-team/igor-450.jpg" alt="Игорь Демьяненко"
-								width="450" height="460"
-								loading="lazy" />
-							
+						<picture>
+							<source srcset="./images/our-team/igor-270.jpg 1x, ./images/our-team/igor-540.jpg 2x" media="(min-width:1200px)" type="">
+							<source srcset="./images/our-team/igor-354.jpg 1x, ./images/our-team/igor-708.jpg 2x" media="(min-width:768px)" type="">
+							<source srcset="./images/our-team/igor-450.jpg 1x, ./images/our-team/igor-900.jpg 2x" media="(max-width:767px)" type="">
+							<img src="./images/our-team/igor-270.jpg" alt="Игорь Демьяненко">
+						</picture>
 								<h3 class="our-team__name">Игорь Демьяненко</h3>
 								<p class="our-team__work-position">Product Designer</p>
 								<ul class="social-icons">
@@ -221,20 +213,12 @@
 
 					</li>
 					<li class="our-team__item">
-						<img 
-							srcset="
-							./images/our-team/olga-270.jpg 270w,
-							./images/our-team/olga-354.jpg 354w,
-							./images/our-team/olga-450.jpg 450w,
-							./images/our-team/olga-540.jpg 540w,
-							./images/our-team/olga-708.jpg 708w,
-							./images/our-team/olga-900.jpg 900w
-							"
-							sizes="(min-width: 1200px) 270px, (min-width: 1200px) 270px, (min-width: 1200px) 270px, 100%"
-							src="./images/our-team/olga-450.jpg" alt="Ольга Репина"
-								width="450" height="460"
-								loading="lazy" />
-							
+						<picture>
+							<source srcset="./images/our-team/olga-270.jpg 1x, ./images/our-team/olga-540.jpg 2x" media="(min-width:1200px)" type="">
+							<source srcset="./images/our-team/olga-354.jpg 1x, ./images/our-team/olga-708.jpg 2x" media="(min-width:768px)" type="">
+							<source srcset="./images/our-team/olga-450.jpg 1x, ./images/our-team/olga-900.jpg 2x" media="(max-width:767px)" type="">
+							<img src="./images/our-team/olga-270.jpg" alt="Ольга Репина">
+						</picture>
 								<h3 class="our-team__name">Ольга Репина</h3>
 								<p class="our-team__work-position">Frontend Developer</p>
 								<ul class="social-icons">
@@ -272,21 +256,12 @@
 						
 					</li>
 					<li class="our-team__item">
-						
-							<img 
-							srcset="
-							./images/our-team/nikolai-270.jpg 270w,
-							./images/our-team/nikolai-354.jpg 354w,
-							./images/our-team/nikolai-450.jpg 450w,
-							./images/our-team/nikolai-540.jpg 540w,
-							./images/our-team/nikolai-708.jpg 708w,
-							./images/our-team/nikolai-900.jpg 900w
-							"
-							sizes="(min-width: 1200px) 270px, (min-width: 1200px) 270px, (min-width: 1200px) 270px, 100%"
-							src="./images/our-team/nikolai-450.jpg" alt="Николай Тарасов"
-								width="450" height="460"
-								loading="lazy" />
-							
+						<picture>
+							<source srcset="./images/our-team/nikolai-270.jpg 1x, ./images/our-team/nikolai-540.jpg 2x" media="(min-width:1200px)" type="">
+							<source srcset="./images/our-team/nikolai-354.jpg 1x, ./images/our-team/nikolai-708.jpg 2x" media="(min-width:768px)" type="">
+							<source srcset="./images/our-team/nikolai-450.jpg 1x, ./images/our-team/nikolai-900.jpg 2x" media="(max-width:767px)" type="">
+							<img src="./images/our-team/nikolai-270.jpg" alt="Николай Тарасов">
+						</picture>
 								<h3 class="our-team__name">Николай Тарасов</h3>
 								<p class="our-team__work-position">Marketing</p>
 								<ul class="social-icons">
@@ -323,7 +298,13 @@
 						
 					</li>
 					<li class="our-team__item">
-						<img 
+						<picture>
+							<source srcset="./images/our-team/mikhail-270.jpg 1x, ./images/our-team/mikhail-540.jpg 2x" media="(min-width:1200px)" type="">
+							<source srcset="./images/our-team/mikhail-354.jpg 1x, ./images/our-team/mikhail-708.jpg 2x" media="(min-width:768px)" type="">
+							<source srcset="./images/our-team/mikhail-450.jpg 1x, ./images/our-team/mikhail-900.jpg 2x" media="(max-width:767px)" type="">
+							<img src="./images/our-team/mikhail-270.jpg" alt="Михаил Ермаков">
+						</picture>
+						<!-- <img 
 							srcset="
 							./images/our-team/mikhail-270.jpg 270w,
 							./images/our-team/mikhail-354.jpg 354w,
@@ -332,10 +313,10 @@
 							./images/our-team/mikhail-708.jpg 708w,
 							./images/our-team/mikhail-900.jpg 900w
 							"
-							sizes="(min-width: 1200px) 270px, (min-width: 1200px) 270px, (min-width: 1200px) 270px, 100%"
+							sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100%"
 							src="./images/our-team/mikhail-450.jpg" alt="Михаил Ермаков"
 								width="450" height="460"
-								loading="lazy" />
+								loading="lazy" /> -->
 							
 								<h3 class="our-team__name">Михаил Ермаков</h3>
 								<p class="our-team__work-position">UI Designer</p>
@@ -498,8 +479,7 @@
 						</li>
 						<li class="address-list__item"><a class="address-list__contacts"
 								href="mailto:info@example.com">info@example.com</a></li>
-						<li class="address-list__item"><a class="address-list__contacts" href="tel:+380991111111">+38 099 111 11
-								11</a></li>
+						<li class="address-list__item"><a class="address-list__contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
 					</ul>
 				</address>
 			</div>
