@@ -38,24 +38,24 @@
 	}
 }
 
-// .social-icon__link--footer {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	width: 44px;
-// 	height: 44px;
-// 	border-radius: 50%;
-// 	fill: var(--white);
-// 	background-color: rgba(255, 255, 255, 0.1);
-// 	transition: background-color 250ms var(--main-cubic);
-// }
-// .social-icon__link--footer:hover,
-// .social-icon__link--footer:focus {
-// 	background-color: var(--accent-color);
-// }
-// .social-icons__item--footer:not(:last-child) {
-// 	margin-right: 10px;
-// }
-// .social-icons__item--footer {
-// 	display: flex;
-// }
+.social-icon__link--footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	fill: var(--white);
+	background-color: rgba(255, 255, 255, 0.1);
+	transition: background-color 250ms var(--main-cubic);
+}
+.social-icon__link--footer:hover,
+.social-icon__link--footer:focus {
+	background-color: var(--accent-color);
+}
+.social-icons__item--footer:not(:last-child) {
+	margin-right: 10px;
+}
+.social-icons__item--footer {
+	display: flex;
+}
