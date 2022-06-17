@@ -1,6 +1,6 @@
 .benefits__item:not(:last-child) {
-	@media screen and (max-width:767px){
-	margin-bottom: 30px;
+	@media screen and (max-width: 767px) {
+		margin-bottom: 30px;
 	}
 }
 .benefits__div {
@@ -38,14 +38,19 @@
 	letter-spacing: 0.03em;
 	color: var(--primary-grey);
 }
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
 	.benefits {
 		display: flex;
 		flex-wrap: wrap;
 		margin: -15px;
 	}
-	.benefits__item{
+	.benefits__item {
 		margin: 15px;
 		width: calc((100% - 15px * 4) / 2);
+	}
+}
+@media screen and (min-width: 1200px) {
+	.benefits__item {
+		width: calc((100% - 15px * 8) / 4);
 	}
 }
