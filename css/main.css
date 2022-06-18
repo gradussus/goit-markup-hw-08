@@ -902,6 +902,7 @@ ul {
   transition: transform 250ms var(--main-cubic), visibility 250ms var(--main-cubic), opacity 250ms var(--main-cubic);
   transition: transform 250ms var(--main-cubic), visibility 250ms var(--main-cubic), opacity 250ms var(--main-cubic), -webkit-transform 250ms var(--main-cubic);
   z-index: 1000;
+  overflow: hidden;
 }
 
 .modal {
