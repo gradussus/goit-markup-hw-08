@@ -144,7 +144,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 88px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__header {
+    margin-right: 88px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
