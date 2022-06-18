@@ -10,7 +10,7 @@
 	transform: scale(1);
 	transition: transform 250ms var(--main-cubic), visibility 250ms var(--main-cubic), opacity 250ms var(--main-cubic);
 	z-index: 1000;
-	overflow: hidden;
+
 }
 .modal {
 	position: absolute;
@@ -24,6 +24,7 @@
 	border-radius: 4px;
 	padding: 40px;
 	pointer-events: all;
+
 }
 .backdrop.is-hidden {
 	pointer-events: none;
