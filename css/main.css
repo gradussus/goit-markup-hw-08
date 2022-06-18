@@ -1261,6 +1261,7 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: -15px;
+  margin-left: -8px;
   margin-bottom: 40px;
 }
 
@@ -1287,7 +1288,7 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-grey);
-  margin-right: 8px;
+  margin-left: 8px;
   margin-top: 15px;
 }
 
