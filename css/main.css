@@ -141,6 +141,16 @@ ul {
 
 .logo__header {
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__header {
+    margin-right: 93px;
+  }
 }
 
 .logo__footer {
@@ -190,13 +200,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 88px;
-}
-
-@media screen and (min-width: 1200px) {
-  .main-nav {
-    margin-left: 93px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -322,7 +325,7 @@ ul {
 
 .contacts-header {
   font-size: 12px;
-  line-height: 1px;
+  line-height: 1.16;
   margin-left: auto;
 }
 
@@ -333,7 +336,7 @@ ul {
     display: flex;
     margin-left: auto;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
   }
 }
 
@@ -632,14 +635,13 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .what-are-we-doing__item {
   position: relative;
-}
-
-.what-are-we-doing__item:not(:first-child) {
-  margin-left: 30px;
 }
 
 .what-are-we-doing__text {
@@ -704,6 +706,12 @@ ul {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__item {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {

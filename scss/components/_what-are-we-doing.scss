@@ -6,13 +6,10 @@
 }
 .what-are-we-doing {
 	display: flex;
+	justify-content: space-between;
 }
 .what-are-we-doing__item {
 	position: relative;
-
-	&:not(:first-child) {
-		margin-left: 30px;
-	}
 }
 .what-are-we-doing__text {
 	position: absolute;
