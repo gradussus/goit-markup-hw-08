@@ -30,11 +30,11 @@
 				</a>
 				<nav>
 					<ul class="main-nav">
-						<li class="main-nav__item"><a class="main-nav__link" href="./index.html">Студия</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфолио</a></li>
 						<li class="main-nav__item">
-							<a class="main-nav__link main-nav__link--current" href="./contacts.html">Контакты</a>
+							<a class="main-nav__link main-nav__link--current" href="./index.html">Студия</a>
 						</li>
+						<li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфолио</a></li>
+						<li class="main-nav__item"><a class="main-nav__link" href="./contacts.html">Контакты</a></li>
 					</ul>
 				</nav>
 				<ul class="contacts-header">
@@ -56,22 +56,30 @@
 					</li>
 				</ul>
 
-				<button class="menu-button" type="button" data-menu-button>
+				<button class="menu-button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
 					<svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-						<use class="icon-close" href="./images/icons.svg#close"></use>
 						<use class="icon-menu" href="./images/icons.svg#menu-btn"></use>
 					</svg>
 				</button>
-				<div class="mobile-menu">
+			</div>
+		</header>
+		<main>
+			<div class="mobile-menu" id="mobile-menu">
+				<div class="mobile-container">
+					<button class="menu-button js-close-menu" type="button">
+						<svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+							<use class="icon-close" href="./images/icons.svg#close"></use>
+						</svg>
+					</button>
 					<ul class="mobile-menu__nav-list">
 						<li class="mobile-menu__nav-item">
-							<a class="mobile-menu__nav-link" href="./index.html">Студия</a>
+							<a class="mobile-menu__nav-link mobile-menu__nav-link__current" href="./index.html">Студия</a>
 						</li>
 						<li class="mobile-menu__nav-item">
 							<a class="mobile-menu__nav-link" href="./portfolio.html">Портфолио</a>
 						</li>
 						<li class="mobile-menu__nav-item">
-							<a class="mobile-menu__nav-link mobile-menu__nav-link__current" href="./contacts.html">Контакты</a>
+							<a class="mobile-menu__nav-link" href="./contacts.html">Контакты</a>
 						</li>
 					</ul>
 					<ul class="mobile-menu__address-list">
@@ -90,15 +98,13 @@
 					</ul>
 				</div>
 			</div>
-		</header>
-		<main></main>
+		</main>
 		<!-- Футер -->
 		<footer class="footer">
 			<div class="container footer__container">
 				<div class="footer__address">
 					<a class="logo logo__footer" lang="en" href="./">
-						<span class="logo__web">Web</span>
-						Studio
+						<span class="logo__web">Web</span>Studio
 					</a>
 					<address>
 						<ul class="address-list">
@@ -121,7 +127,7 @@
 						</ul>
 					</address>
 				</div>
-				<div class="footer__invite">
+				<div class="footer__invite" id="mobile-menu">
 					<h2 class="footer__title">Присоединяйтесь</h2>
 					<ul class="social-icons social-icons--footer">
 						<li class="social-icons__item social-icons__item--footer">
@@ -168,6 +174,12 @@
 				</div>
 			</div>
 		</footer>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
 		<script src="./js/modal.js"></script>
 		<script src="./js/mobile-menu.js"></script>
 	</body>

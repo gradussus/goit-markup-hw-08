@@ -4,7 +4,6 @@
 	padding: 0;
 	background-color: transparent;
 	border: none;
-	z-index: 100;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	cursor: pointer;
@@ -18,9 +17,7 @@
 		display: none;
 	}
 }
-.menu-button .icon-close {
-	display: none;
-}
+
 .main-nav {
 	display: flex;
 }
@@ -33,12 +30,7 @@
 .main-nav__item:not(:first-child) {
 	margin-left: 50px;
 }
-.menu-button.is-open .icon-close {
-	display: block;
-}
-.menu-button.is-open .icon-menu {
-	display: none;
-}
+
 .header {
 	border-bottom: 1px solid #ececec;
 }
