@@ -387,16 +387,18 @@ ul {
   transition: -webkit-transform 250ms var(--main-cubic);
   transition: transform 250ms var(--main-cubic);
   transition: transform 250ms var(--main-cubic), -webkit-transform 250ms var(--main-cubic);
-  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -414,19 +416,13 @@ ul {
 }
 
 .is-open + .mobile-menu {
-  position: fixed;
-  left: 0;
-  top: 0;
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: -webkit-transform 250ms var(--main-cubic);
   transition: -webkit-transform 250ms var(--main-cubic);
   transition: transform 250ms var(--main-cubic);
   transition: transform 250ms var(--main-cubic), -webkit-transform 250ms var(--main-cubic);
-  width: 100vw;
-  height: 100vh;
   z-index: 10;
-  background-color: #fff;
 }
 
 .mobile-menu__address-list {

@@ -1,8 +1,8 @@
 .mobile-menu {
-	@media screen and (min-width: 769px) {
+	@media screen and (min-width: 768px) {
 		display: none;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -13,18 +13,14 @@
 	}
 	padding: 48px 40px;
 	transition: transform 250ms var(--main-cubic);
-	z-index: 10;
-}
-.is-open + .mobile-menu {
-	position: fixed;
-	left: 0;
-	top: 0;
-	transform: translateX(0);
-	transition: transform 250ms var(--main-cubic);
 	width: 100vw;
 	height: 100vh;
-	z-index: 10;
 	background-color: #fff;
+}
+.is-open + .mobile-menu {
+	transform: translateX(0);
+	transition: transform 250ms var(--main-cubic);
+	z-index: 10;
 }
 .mobile-menu__address-list {
 	margin-top: auto;
