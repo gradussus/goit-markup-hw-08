@@ -1409,6 +1409,7 @@ ul {
 
 .overlay-text {
   position: absolute;
+  overflow: hidden;
   -webkit-transform: translate(0);
           transform: translate(0);
   width: 100%;
