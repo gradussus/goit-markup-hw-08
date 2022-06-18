@@ -7,6 +7,7 @@
 	z-index: 100;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	cursor: pointer;
 
 	&:hover,
 	&:focus {
@@ -50,7 +51,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	@media screen and (min-width:768px){
+	@media screen and (min-width: 768px) {
 		justify-content: start;
 	}
 }
@@ -119,11 +120,13 @@
 }
 .contacts-header {
 	font-size: 12px;
-	line-height: 14px;
+	line-height: 1px;
 	margin-left: auto;
 	@media screen and (min-width: 1200px) {
 		display: flex;
 		margin-left: auto;
+		font-size: 14px;
+		line-height: 1.14px;
 	}
 }
 .contacts-header__link {

@@ -75,12 +75,13 @@
 	color: var(--primary-black);
 	text-decoration: none;
 
-	margin-bottom: 32px;
-
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
 	}
+}
+.mobile-menu__nav-item:not(:last-child) {
+	margin-bottom: 32px;
 }
 .mobile-menu__nav-link__current {
 	color: var(--accent-color);
